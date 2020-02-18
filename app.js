@@ -6,10 +6,14 @@ $(function () {
     let introH = intro.innerHeight(); /* высоtа блока инtро, вызываем меtод хейд */
     let scrollPos = $(window).scrollTop(); /* позиция скрола */
 
+<<<<<<< HEAD
     checkScroll (scrollPos, introH);
 
     $(window).on("scroll load resize", function() { /* добавили load, чтобы при обновление стр закрепленная шапка не исчезала */
         introH = intro.innerHeight();
+=======
+    $(window).on("scroll", function() {
+>>>>>>> fbaa886ddc15c73da89faf444921e91da7e8e234
         scrollPos = $(this).scrollTop();
 
         checkScroll (scrollPos, introH)
