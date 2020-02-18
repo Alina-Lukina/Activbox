@@ -5,7 +5,7 @@ $(function () {
     let introH = intro.innerHeight(); /* высоtа блока инtро, вызываем меtод хейд */
     let scrollPos = $(window).scrollTop(); /* позиция скрола */
 
-    $(windows).on("scroll", function() {
+    $(window).on("scroll", function() {
         scrollPos = $(this).scrollTop();
         if(scrollPos > introH) {
             header.addClass("fixed"); /* придали класс хедеру fixed */
