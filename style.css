@@ -45,6 +45,19 @@ p {
 
 }
 
+.header.fixed {
+    height: auto;
+    position: fixed;
+
+    background-color: #31344e;
+}
+
+.header.fixed .header__inner {
+    padding: 0;
+
+    border-bottom:
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between; /* между элементами данного блока будет расстояние */
