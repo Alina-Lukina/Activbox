@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:400,700|Raleway:300,400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <title>ActiveBox</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- чтобы на моб. ширина сайта=ширине экрана, зум, если =1, то сайт загружается в обычном виде, без увеличения/уменьшения -->
@@ -41,14 +42,14 @@
                     <div class="header__logo">
                         <img src="img/activeboxLogo.png" alt="">
                     </div>
-                    <nav class="nav">
+                    <nav class="nav" id="nav">
                         <a class="nav__link" href="#" data-scroll="#features">Features</a>
                         <a class="nav__link" href="#" data-scroll="#works">Works</a>
                         <a class="nav__link" href="#" data-scroll="#team">Our Team</a>
                         <a class="nav__link" href="#" data-scroll="#reviews">Testimonials</a>
                         <a class="nav__link" href="#" data-scroll="#download">Download</a>
                     </nav>
-                    <button class="burger" type="button">
+                    <button class="burger" type="button" id="navToggle">
                         <span class="burger__item">Menu</span>
                     </button>
                 </div>
@@ -284,15 +285,31 @@
 <!-- Testimonials -->
 <div class="reviews" id="reviews">
   <div class="container">
-       <div class="reviews__item">
-           <div class="reviews__photo">
-               <img class="reviews__img" src="img/reviwes/reviews_1.jpg" alt="">
-            </div>
-           <div class="reviews__content">
-               <div class="reviews__text"><p class="reviews_text_p">“Integer posuere erat a ante</p> <p class="reviews_text_p">venenatis dapibus posuere velit</p><p class="reviews_text_p">aliquet. Donec sed odio dui. Aenean</p> <p class="reviews_text_p">eu leo quam...”</p></div>
-               <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
-           </div>
-       </div>
+
+      <div class="reviews__slider" id="reviewsSlider">
+          <div>
+               <div class="reviews__item">
+                   <div class="reviews__photo">
+                       <img class="reviews__img" src="img/reviwes/reviews_1.jpg" alt="">
+                    </div>
+                   <div class="reviews__content">
+                       <div class="reviews__text"><p class="reviews_text_p">“Integer posuere erat a ante</p> <p class="reviews_text_p">venenatis dapibus posuere velit</p><p class="reviews_text_p">aliquet. Donec sed odio dui. Aenean</p> <p class="reviews_text_p">eu leo quam...”</p></div>
+                       <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+                   </div>
+               </div>
+          </div>
+          <div>
+               <div class="reviews__item">
+                   <div class="reviews__photo">
+                       <img class="reviews__img" src="img/reviwes/reviews_1.jpg" alt="">
+                    </div>
+                   <div class="reviews__content">
+                       <div class="reviews__text"><p class="reviews_text_p">“lejfklvjkcl gjfkld jgklf;lkjhgjfklfkgjhjfk</p> <p class="reviews_text_p">hgjkfl hgjfkld hgjfk hgjfkdl</p><p class="reviews_text_p">ghjfkdl ghjfkdl ghfjdkl ghjfkd</p> <p class="reviews_text_p">ghjfkdlghfjkd hgjfkdl hgjfkdl”</p></div>
+                       <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+                   </div>
+               </div>
+          </div>
+    </div>
   </div>
 
 </div> <!-- Testimonials -->
@@ -363,6 +380,7 @@
 </footer> <!-- /Footer -->
 
 <!-- Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="app.js"></script>
 
 
